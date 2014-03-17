@@ -4,9 +4,10 @@ public class TimeToShip {
 		// TODO Auto-generated method stub
 		
 		Box<Nokia> boxOfPhones = new Box<>();
+		// boxOfPhones.add(new Nokia());
 		
-		// Box<Blackberry> boxOfPhones2 = new Box<>();
-		
+		Box<Blackberry> boxOfPhones2 = new Box<>();
+		 
 		// Create a shipment of Nokia phones
 		ShippingOrder<String, Box<Nokia>> so1= 
 				new ShippingOrder<> ("ph1234", boxOfPhones);
