@@ -70,7 +70,7 @@ public class TaxGuiFile7 extends JFrame implements ActionListener {
                int dependents = Integer.parseInt(txtDependents.getText());
                String state = (String)chState.getSelectedItem();
 
-               Tax tax=new Tax(dependents,state,grossInc);
+               Tax tax=new Tax(grossInc,state,dependents);
                String sTax =Double.toString(tax.calcTax());
                txtStateTax.setText(sTax);
              }catch(NumberFormatException e){
